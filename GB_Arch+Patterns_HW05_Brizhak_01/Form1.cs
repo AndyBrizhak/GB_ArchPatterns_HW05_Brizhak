@@ -16,5 +16,14 @@ namespace GB_Arch_Patterns_HW05_Brizhak_01
         {
             InitializeComponent();
         }
+
+        void Draw()
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                IShape _shape = FactoryShapes.GetShape("Circle");
+                //_shape.();
+            }
+        }
     }
 }
