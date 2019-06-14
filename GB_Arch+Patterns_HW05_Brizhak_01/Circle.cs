@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace GB_Arch_Patterns_HW05_Brizhak_01
 {
-    public class AquaCircle : IFig
+    public class Circle : IFig
     {
         public void Draw(Graphics g, int x, int y, int width, int height)
         {
             
-           g.DrawEllipse(Pens.Aqua, x, y, width, height);
+           g.DrawEllipse(Pens.Green, x, y, width, height);
         }
     }
 }
