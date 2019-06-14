@@ -11,8 +11,7 @@ namespace GB_Arch_Patterns_HW05_Brizhak_01
     {
         public void Draw(Graphics g, int x, int y, int width, int height)
         {
-            //throw new NotImplementedException();
-            //g.FillEllipse(Brushes.Aqua, x, y, width, height);
+            
            g.DrawEllipse(Pens.Aqua, x, y, width, height);
         }
     }
