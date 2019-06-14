@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GB_Arch_Patterns_HW05_Brizhak_01
 {
-    public class Circle : IFig
+    public class Circle : IShape
     {
         public void Draw(Graphics g, int x, int y, int width, int height)
         {
