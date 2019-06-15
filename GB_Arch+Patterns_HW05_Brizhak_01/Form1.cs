@@ -17,12 +17,20 @@ namespace GB_Arch_Patterns_HW05_Brizhak_01
             InitializeComponent();
         }
 
-        void Draw()
+        protected override void OnPaint(PaintEventArgs e)
         {
+            base.OnPaint(e);
+
             for (int i = 0; i < 4; i++)
             {
-                IShape _shape = FactoryShapes.GetShape("Circle");
-                //_shape.();
+                IShape shape = FactoryShapes.GetShape("Circle");
+                shape.Draw(e.Graphics,i+10, i+10, i+100, i+100);
+            }
+
+            for (int i = 0; i < 4; i++)
+            {
+                IShape shape = FactoryShapes.GetShape("Rectangle");
+                shape.Draw(e.Graphics, i + 10, i + 10, i + 100, i + 100);
             }
         }
     }
