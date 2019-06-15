@@ -17,6 +17,12 @@ namespace GB_Arch_Patterns_HW05_Brizhak_01
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Переопределенный метод для отрисовки фигур на форме,
+        /// координаты каждой новой фигуры взяты со сдвигом +10
+        /// от номера цикла
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);

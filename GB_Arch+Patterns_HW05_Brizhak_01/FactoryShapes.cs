@@ -8,8 +8,19 @@ namespace GB_Arch_Patterns_HW05_Brizhak_01
 {
    public class FactoryShapes
     {
+        /// <summary>
+        /// Словарь типов фигур
+        /// </summary>
         static Dictionary<string, IShape> _shapeType = new Dictionary<string, IShape>();
 
+        /// <summary>
+        /// Метод создания и/или получения типов фигур в словаре _shapeType по наименованию,
+        /// если тип фигуры еще не создан , то он этот тип создается как новый экземпляр своего класса,
+        /// если такой тип уже есть в словаре, то передается уже существующий экземпляр.
+        /// Если ни один из типов не совпадает по входящему наименованию, то возвращается null.
+        /// </summary>
+        /// <param name="nameType">Наименование фигуры</param>
+        /// <returns></returns>
         public static IShape GetShape(string nameType)
         {
             if (nameType=="Circle")
