@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace GB_Arch_Pattrens_HW05_Brizhak_02
 {
+    /// <summary>
+    /// Класс заместитель исходного класса Math
+    /// </summary>
     class ProxyMath
     {
         Math math = new Math();

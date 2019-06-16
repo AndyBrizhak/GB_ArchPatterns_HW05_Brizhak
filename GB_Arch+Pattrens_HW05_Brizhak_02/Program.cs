@@ -15,6 +15,16 @@ namespace GB_Arch_Pattrens_HW05_Brizhak_02
     {
         static void Main(string[] args)
         {
+            ProxyMath proxyMath = new ProxyMath();
+            Math myMath =new Math();
+
+            Console.WriteLine( proxyMath.Add(3, 7));
+            Console.WriteLine( proxyMath.Sub(3, 7));
+            Console.WriteLine( proxyMath.Mul(3, 7));
+            Console.WriteLine( proxyMath.Div(3, 7));
+            Console.WriteLine(myMath.MedTwoNum(3,7));
+            Console.ReadKey();
+
         }
     }
 }
