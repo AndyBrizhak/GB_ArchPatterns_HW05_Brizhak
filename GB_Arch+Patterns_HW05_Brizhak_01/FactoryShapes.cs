@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace GB_Arch_Patterns_HW05_Brizhak_01
 {
-   public class FactoryShapes
+    public class FactoryShapes
     {
         /// <summary>
         /// Словарь типов фигур
