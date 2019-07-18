@@ -11,6 +11,7 @@ namespace GB_Arch_Pattrens_HW05_Brizhak_02
     {
         static void Main(string[] args)
         {
+            // экземпляр пользовательского класса-заместителя
             ProxyMath proxyMath = new ProxyMath();
             Math myMath =new Math();
 
